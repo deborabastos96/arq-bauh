@@ -1,0 +1,149 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: $default-font-size;
+  line-height: 1.7;
+  color: $color-grey-dark-3;
+}
+
+.heading-primary {
+  color: $color-secondary;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+
+  @include respond(tab-land) {
+    letter-spacing: 1.2px;
+  }
+
+  &--parabens {
+    font-size: 8rem;
+    letter-spacing: -2px;
+    background-image: linear-gradient(
+      to right,
+      $color-secondary 15%,
+      $color-secondary-dark
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+
+    @include respond(tab-small) {
+      font-size: 6rem;
+    }
+  }
+}
+
+.heading-secondary {
+  color: $color-primary-dark;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 6rem;
+  letter-spacing: -1.5px;
+
+  @include respond(tab-land) {
+    font-size: 3.2rem;
+    letter-spacing: -1px;
+  }
+
+  &--hero {
+    color: $color-secondary;
+    font-size: 3.6rem;
+    letter-spacing: -1px;
+
+    @include respond(tab-land) {
+      font-size: 3rem;
+      letter-spacing: -0.5px;
+    }
+  }
+
+  &--quem {
+    color: $color-secondary-darkest;
+  }
+
+  &--parabens {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 2rem;
+
+    @include respond(tab-port) {
+      letter-spacing: 0.8px;
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.heading-tertiary {
+  font-size: $default-font-size;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 1rem;
+  color: $color-secondary;
+
+  &--hero {
+    color: $color-white;
+    font-size: 2rem;
+
+    @include respond(tab-land) {
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+    }
+  }
+
+  &--quem {
+    color: $color-secondary-light;
+  }
+}
+
+.heading-quaternary {
+  font-size: 9.6rem;
+  text-transform: uppercase;
+  color: $color-grey-light-2;
+  line-height: 1;
+}
+
+.paragraph {
+  font-size: 1.8rem;
+
+  &--cta {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: $color-secondary;
+    letter-spacing: 0.6px;
+
+    @include respond(tab-land) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &--evento {
+    text-align: center;
+    font-size: 2rem;
+
+    @include respond(tab-land) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &--vagas {
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.link,
+.link:link,
+.link:visited {
+  color: $color-secondary;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: $color-primary;
+}
