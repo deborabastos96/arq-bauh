@@ -1,5 +1,18 @@
 .section-hero {
-  background-image: url("../../img/cidade-3.jpg");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.35) 10%,
+      rgba(0, 0, 0, 0)
+    ),
+    url("../../img/cidade-2.jpg");
   background-position: center;
-  height: 100vh;
+  height: 75vh;
+
+  display: grid;
+  align-items: end;
+  justify-content: start;
+}
+
+.hero {
+  max-width: 100rem;
 }
