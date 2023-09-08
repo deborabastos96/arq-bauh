@@ -38,9 +38,13 @@
 .link,
 .link:link,
 .link:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-size: 1.4rem;
+
   padding-bottom: 0.5rem;
   color: $color-white;
-  text-decoration: none;
   border-bottom: solid 2px #fff;
 
   transition: all 0.3s;
@@ -48,6 +52,5 @@
 
 .link:hover,
 .link:active {
-  color: $color-primary;
   border-bottom: solid 2px #ffffff00;
 }

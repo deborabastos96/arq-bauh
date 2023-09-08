@@ -1,5 +1,9 @@
 .u-center-text {
-  text-align: center !important;
+  text-align: center;
+}
+
+.u-text-right {
+  text-align: right;
 }
 
 .u-margin-bottom-small {
@@ -8,18 +12,10 @@
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important;
-
-  @include respond(tab-land) {
-    margin-bottom: 3rem !important;
-  }
 }
 
 .u-margin-bottom-big {
   margin-bottom: 8rem !important;
-
-  @include respond(tab-land) {
-    margin-bottom: 6rem !important;
-  }
 }
 
 .u-margin-top-small {

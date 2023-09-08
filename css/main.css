@@ -40,10 +40,10 @@ body {
 } */
 body {
   font-family: "Kanit", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.8rem;
   line-height: 1.7;
-  color: #333;
+  color: #000;
 }
 
 .heading-primary {
@@ -56,24 +56,35 @@ body {
 }
 
 .heading-secondary {
-  color: #0a3873;
-  font-size: 4rem;
-  font-weight: 700;
+  font-size: 4.2rem;
+  font-weight: 500;
   line-height: 1.2;
-  margin-bottom: 6rem;
-  letter-spacing: -1.5px;
+  margin-bottom: 3rem;
 }
 
 .heading-tertiary {
-  font-size: 1.8rem;
+  font-size: 4.2rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.span {
+  font-size: 1.6rem;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
-  margin-bottom: 1rem;
-  color: #bfa169;
+  letter-spacing: 2.5px;
+  font-weight: 300;
+}
+
+p {
+  padding-bottom: 1rem;
 }
 
 .u-center-text {
-  text-align: center !important;
+  text-align: center;
+}
+
+.u-text-right {
+  text-align: right;
 }
 
 .u-margin-bottom-small {
@@ -83,19 +94,9 @@ body {
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important;
 }
-@media only screen and (max-width: 75em) {
-  .u-margin-bottom-medium {
-    margin-bottom: 3rem !important;
-  }
-}
 
 .u-margin-bottom-big {
   margin-bottom: 8rem !important;
-}
-@media only screen and (max-width: 75em) {
-  .u-margin-bottom-big {
-    margin-bottom: 6rem !important;
-  }
 }
 
 .u-margin-top-small {
@@ -148,9 +149,12 @@ body {
 .link,
 .link:link,
 .link:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-size: 1.4rem;
   padding-bottom: 0.5rem;
   color: #fff;
-  text-decoration: none;
   border-bottom: solid 2px #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -158,13 +162,12 @@ body {
 
 .link:hover,
 .link:active {
-  color: #0b438c;
   border-bottom: solid 2px rgba(255, 255, 255, 0);
 }
 
 .container {
   max-width: 130rem;
-  padding: 6rem 4rem 6rem 4rem;
+  padding: 12rem 4rem 12rem 4rem;
   margin: 0 auto;
 }
 
@@ -181,11 +184,19 @@ body {
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
 }
-.grid--3-cols {
-  grid-template-columns: repeat(3, 1fr);
+.grid--3-cols-produtos {
+  display: grid;
+  grid-template-columns: 5fr 1fr 5fr;
+  -webkit-column-gap: 4rem;
+     -moz-column-gap: 4rem;
+          column-gap: 4rem;
 }
-.grid--4-cols {
-  grid-template-columns: repeat(4, 1fr);
+.grid--produtos {
+  display: grid;
+  row-gap: 4rem;
+}
+.grid--3-cols-equipe {
+  grid-template-columns: repeat(3, 1fr);
 }
 .grid--center-v {
   -webkit-box-align: center;
@@ -193,16 +204,14 @@ body {
           align-items: center;
 }
 .grid--center-h {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-items: center;
 }
 
 .header {
   position: absolute;
   left: 4rem;
   right: 4rem;
-  top: 4rem;
+  top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -262,10 +271,10 @@ body {
 }
 
 .section-hero {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0))), url("../../img/cidade-2.jpg");
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.35) 10%, rgba(0, 0, 0, 0)), url("../../img/cidade-2.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, rgba(0, 0, 0, 0.55)), to(rgba(0, 0, 0, 0.3))), url("../../img/cidade-2.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.55) 10%, rgba(0, 0, 0, 0.3)), url("../../img/cidade-2.jpg");
   background-position: center;
-  height: 75vh;
+  height: 80vh;
   display: grid;
   -webkit-box-align: end;
       -ms-flex-align: end;
@@ -277,4 +286,39 @@ body {
 
 .hero {
   max-width: 100rem;
+  padding-bottom: 4rem;
+}
+
+.section-produtos {
+  background-color: #e7e7da;
+}
+
+.produtos {
+  text-align: center;
+  width: 100rem;
+}
+
+.img-produtos {
+  width: 100%;
+}
+
+.number {
+  font-weight: 400;
+  font-size: 3.2rem;
+  padding: 1rem 2.6rem;
+  border-radius: 50px;
+  background-color: #000;
+  color: #fff;
+}
+
+.img-sobre {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 600px;
+  height: 500px;
+}
+
+.img-div {
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

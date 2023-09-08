@@ -1,6 +1,6 @@
 .container {
   max-width: 130rem;
-  padding: 6rem 4rem 6rem 4rem;
+  padding: 12rem 4rem 12rem 4rem;
   margin: 0 auto;
 }
 
@@ -17,12 +17,19 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  &--3-cols {
-    grid-template-columns: repeat(3, 1fr);
+  &--3-cols-produtos {
+    display: grid;
+    grid-template-columns: 5fr 1fr 5fr;
+    column-gap: 4rem;
   }
 
-  &--4-cols {
-    grid-template-columns: repeat(4, 1fr);
+  &--produtos {
+    display: grid;
+    row-gap: 4rem;
+  }
+
+  &--3-cols-equipe {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   &--center-v {
@@ -30,6 +37,6 @@
   }
 
   &--center-h {
-    justify-content: center;
+    justify-items: center;
   }
 }
