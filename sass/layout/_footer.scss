@@ -1,0 +1,31 @@
+.footer {
+  width: 130rem;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copy {
+  font-size: 1.6rem;
+}
+
+.social {
+  display: flex;
+  gap: 2rem;
+}
+
+.icon {
+  font-size: 2.8rem;
+  padding: 1.6rem;
+  border-radius: 50px;
+  background-color: $color-black;
+  color: $color-white;
+  transition: all 0.3s;
+}
+
+.icon:hover,
+.icon:active {
+  color: $color-white;
+}

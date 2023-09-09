@@ -28,8 +28,8 @@
     row-gap: 4rem;
   }
 
-  &--3-cols-equipe {
-    grid-template-columns: repeat(3, 1fr);
+  &--4-cols {
+    grid-template-columns: repeat(4, 1fr);
   }
 
   &--center-v {

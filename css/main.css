@@ -67,6 +67,9 @@ body {
   font-weight: 500;
   line-height: 1.2;
 }
+.heading-tertiary-equipe {
+  font-size: 2.4rem;
+}
 
 .span {
   font-size: 1.6rem;
@@ -88,31 +91,11 @@ p {
 }
 
 .u-margin-bottom-small {
-  margin-bottom: 2rem !important;
+  margin-bottom: 1rem !important;
 }
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important;
-}
-
-.u-margin-bottom-big {
-  margin-bottom: 8rem !important;
-}
-
-.u-margin-top-small {
-  margin-top: 1rem !important;
-}
-
-.u-margin-top-medium {
-  margin-top: 4rem !important;
-}
-
-.u-margin-top-big {
-  margin-top: 8rem !important;
-}
-
-.u-margin-top-huge {
-  margin-top: 10rem !important;
 }
 
 .btn, .btn:link, .btn:visited {
@@ -165,6 +148,53 @@ p {
   border-bottom: solid 2px rgba(255, 255, 255, 0);
 }
 
+.img-equipe {
+  width: 100%;
+  -webkit-box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.12);
+          box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.12);
+}
+
+.footer {
+  width: 130rem;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.copy {
+  font-size: 1.6rem;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+.icon {
+  font-size: 2.8rem;
+  padding: 1.6rem;
+  border-radius: 50px;
+  background-color: #000;
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.icon:hover,
+.icon:active {
+  color: #fff;
+}
+
 .container {
   max-width: 130rem;
   padding: 12rem 4rem 12rem 4rem;
@@ -195,8 +225,8 @@ p {
   display: grid;
   row-gap: 4rem;
 }
-.grid--3-cols-equipe {
-  grid-template-columns: repeat(3, 1fr);
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
 }
 .grid--center-v {
   -webkit-box-align: center;
@@ -300,6 +330,8 @@ p {
 
 .img-produtos {
   width: 100%;
+  -webkit-box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.12);
+          box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.12);
 }
 
 .number {
@@ -312,11 +344,12 @@ p {
 }
 
 .img-sobre {
-  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   width: 600px;
   height: 500px;
+  -webkit-box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.12);
+          box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.12);
 }
 
 .img-div {

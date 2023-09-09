@@ -13,12 +13,6 @@
     <link rel="apple-touch-icon" href="img/favicon-colorida-180px.png" />
     <link rel="manifest" href="manifest.webmanifest" />
 
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,10 +23,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <script defer src="script.js"></script>
 
-    <script
-      defer
-      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"
-    ></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
     <title>ARQ/BAUH</title>
   </head>
@@ -154,7 +145,7 @@
               e honestos que desejam progredir a cidade e ao mesmo tempo
               economizar os parcos recursos do erário.
             </p>
-            <p>Ele é composto por 7 projetos:</p>
+            <p class="u-margin-bottom-medium">Ele é composto por 7 projetos:</p>
           </div>
 
           <div class="grid--3-cols-produtos grid--center-v">
@@ -267,7 +258,9 @@
             </div>
           </div>
 
-          <div class="grid--3-cols-produtos grid--center-v">
+          <div
+            class="grid--3-cols-produtos grid--center-v u-margin-bottom-medium"
+          >
             <div class="img-div">
               <img
                 class="img-produtos"
@@ -285,40 +278,94 @@
               <h3 class="heading-tertiary">Centro Comercial Aquático</h3>
             </div>
           </div>
+
+          <div class="produtos">
+            <span class="span">Mais sobre os Produtos</span>
+            <h2 class="heading-secondary">Novos Produtos</h2>
+            <p>
+              Programos para o lançamento no primeiro trimestre de 2024, do
+              Institucional II e III, com diversos outros projetos ainda
+              dirigidos à imensa carência do poder público.
+            </p>
+            <p>
+              No segundo semestre de 2024 pretendemos iniciar uma linha ousada e
+              comercialmente mais agressiva: projetos de loteamento e prédios
+              privados.
+            </p>
+          </div>
         </div>
       </section>
 
       <section class="section-equipe" id="equipe">
         <div class="container">
-          <div class="container grid grid--center-h grid--produtos">
+          <div class="grid grid--center-h grid--produtos">
             <div class="produtos">
-              <span class="span">Produtos</span>
-              <h2 class="heading-secondary">Padrões Institucionais I</h2>
-              <p>
-                Neste sentido juntou as competências mais excelentes para criar
-                a ARQ/BAUH, uma fábrica de projetos, com uma visão de vender
-                pacotes de projetos prontos, modulares e customizáveis, para
-                atender o poder público e privado.
-              </p>
-              <p>
-                O primeiro kit de projetos ficou pronto e está disponível por
-                R$33 mil Reais - o valor limite para uma compra com dispensa de
-                licitação. Projetos que custariam algo em torno de R$1 milhão de
-                Reais, estão então disponíveis para os prefeitos e gestores
-                sérios e honestos que desejam progredir a cidade e ao mesmo
-                tempo economizar os parcos recursos do erário.
-              </p>
-              <p>Ele é composto por 7 projetos:</p>
+              <span class="span">Equipe ARQ/BAUH</span>
+              <h2 class="heading-secondary">Arquitetos & Diretores</h2>
+            </div>
+
+            <div class="grid grid--4-cols u-center-text">
+              <div>
+                <img
+                  src="img/projeto-4.jpg"
+                  alt="Emani Vilela"
+                  class="img-equipe u-margin-bottom-small"
+                />
+                <span class="span">Arquiteto</span>
+                <h2 class="heading-tertiary heading-tertiary-equipe">
+                  Ernani Vilela
+                </h2>
+              </div>
+
+              <div>
+                <img
+                  src="img/projeto-4.jpg"
+                  alt="Marcel Valentim"
+                  class="img-equipe u-margin-bottom-small"
+                />
+                <span class="span">Arquiteto</span>
+                <h2 class="heading-tertiary heading-tertiary-equipe">
+                  Marcel Valentim
+                </h2>
+              </div>
+
+              <div>
+                <img
+                  src="img/projeto-4.jpg"
+                  alt="Ademar Meireles"
+                  class="img-equipe u-margin-bottom-small"
+                />
+                <span class="span">Diretor</span>
+                <h2 class="heading-tertiary heading-tertiary-equipe">
+                  Ademar Meireles
+                </h2>
+              </div>
+
+              <div>
+                <img
+                  src="img/projeto-4.jpg"
+                  alt="Lucas de Oliveira"
+                  class="img-equipe u-margin-bottom-small"
+                />
+                <span class="span">Diretor</span>
+                <h2 class="heading-tertiary heading-tertiary-equipe">
+                  Lucas de Oliveira
+                </h2>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section-contato" id="contato">
-        <div class="container"></div>
-      </section>
-    </main>
-
-    <footer class="footer"></footer>
+    <footer class="footer" id="contato">
+      <span class="copy"
+        >ARQ/BAUH &copy; Copyright <span class="year">2023</span>. Todos os
+        direitos reservados.</span
+      >
+      <div class="social">
+        <a href="#"><ion-icon class="icon" name="mail"></ion-icon></a>
+        <a href="#"><ion-icon class="icon" name="call"></ion-icon></a>
+      </div>
+    </footer>
   </body>
 </html>
