@@ -16,9 +16,9 @@ html {
     font-size: 56.25%;
   }
 
-  /* @include respond(big-desktop) {
+  @include respond(big-desktop) {
     font-size: 75%;
-  } */
+  }
 }
 
 body {
@@ -26,7 +26,24 @@ body {
   position: relative;
 }
 
-/* ::selection {
+::selection {
   background-color: $color-primary;
   color: $color-white;
-} */
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

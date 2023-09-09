@@ -2,6 +2,10 @@
   max-width: 130rem;
   padding: 12rem 4rem 12rem 4rem;
   margin: 0 auto;
+
+  @include respond(tab-port) {
+    padding: 6rem 4rem 6rem 4rem;
+  }
 }
 
 .grid {
@@ -9,18 +13,34 @@
   column-gap: 6.4rem;
   row-gap: 9.6rem;
 
+  @include respond(tab-port) {
+    row-gap: 4rem;
+  }
+
   &:not(:last-child) {
     margin-bottom: 9.6rem;
+
+    @include respond(tab-port) {
+      margin-bottom: 6rem;
+    }
   }
 
   &--2-cols {
     grid-template-columns: repeat(2, 1fr);
+
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &--3-cols-produtos {
     display: grid;
     grid-template-columns: 5fr 1fr 5fr;
     column-gap: 4rem;
+
+    @include respond(tab-port) {
+      grid-template-columns: 5fr 1fr;
+    }
   }
 
   &--produtos {
@@ -30,6 +50,14 @@
 
   &--4-cols {
     grid-template-columns: repeat(4, 1fr);
+
+    @include respond(tab-port) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &--center-v {

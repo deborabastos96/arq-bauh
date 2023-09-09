@@ -1,14 +1,24 @@
 .footer {
-  width: 130rem;
+  max-width: 130rem;
   margin: 0 auto;
   padding: 2rem 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include respond(tab-port) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 .copy {
   font-size: 1.6rem;
+
+  @include respond(tab-port) {
+    padding-top: 2rem;
+    text-align: center;
+  }
 }
 
 .social {
@@ -22,10 +32,11 @@
   border-radius: 50px;
   background-color: $color-black;
   color: $color-white;
+  box-shadow: $shadow-light;
   transition: all 0.3s;
 }
 
 .icon:hover,
 .icon:active {
-  color: $color-white;
+  background-color: $color-primary;
 }

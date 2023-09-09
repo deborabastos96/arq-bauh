@@ -4,34 +4,52 @@
   &:visited {
     text-transform: uppercase;
     text-decoration: none;
-    font-size: $default-font-size;
-    font-weight: 700;
+    font-weight: 400;
+    font-size: 1.4rem;
+    letter-spacing: 2.5px;
 
-    padding: 1.5rem 4rem;
+    padding: 1.2rem 3rem;
     border-radius: 10rem;
 
     display: inline-block;
-    transition: all 0.2s;
+    transition: all 0.3s;
 
-    // Change for the <button> element
     border: none;
-    cursor: pointer;
-    background-color: $color-primary-dark;
+    background-color: $color-primary;
     color: $color-white;
 
     box-shadow: 0 1rem 2rem 0 rgba($color-black, 0.12);
+
+    @include respond(tab-port) {
+      font-size: 2.4rem;
+      background-color: transparent;
+      box-shadow: 0 0 0 0;
+      padding: 0;
+    }
   }
 
   &:hover {
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem 0 rgba($color-black, 0.2);
-    background-color: $color-primary;
+    background-color: $color-primary-dark;
+
+    @include respond(tab-port) {
+      transform: translateY(0);
+      box-shadow: 0 0 0 0;
+      background-color: transparent;
+      color: $color-primary;
+    }
   }
 
   &:active,
   &:focus {
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem 0 rgba($color-black, 0.2);
+
+    @include respond(tab-port) {
+      transform: translateY(0);
+      box-shadow: 0 0 0 0;
+    }
   }
 }
 
@@ -52,5 +70,5 @@
 
 .link:hover,
 .link:active {
-  border-bottom: solid 2px #ffffff00;
+  border-bottom: solid 2px rgba(255, 255, 255, 0);
 }
