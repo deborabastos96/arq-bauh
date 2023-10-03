@@ -1,0 +1,16 @@
+.equipe {
+  background-color: #f0f0f0;
+  border-left: 8px solid $color-secondary;
+  padding: 4rem 0 4rem 4rem;
+
+  &--title {
+    padding-bottom: 2rem;
+    border-bottom: 2px solid $color-primary;
+  }
+
+  @include respond(tab-port) {
+    border-top: 8px solid $color-secondary;
+    border-left: none;
+    padding: 3rem 0 3rem 3rem;
+  }
+}

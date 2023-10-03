@@ -21,14 +21,18 @@
   bottom: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.97);
-  height: 8rem;
+  height: 10rem;
   z-index: 999;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
 }
 
+.logo {
+  height: 11rem;
+}
+
 .logo,
 .main-nav {
-  padding: 2rem 4rem;
+  padding: 1rem 4rem;
 }
 
 .main-nav-list {
